@@ -9,6 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: #1F2937;
     
 }
 .flex-container > div{
@@ -16,9 +17,8 @@ body{
 }
 
 /* Header */
-.header, .section1, .footer{
-    background-color: #1F2937;
-}
+
+
 
 .nav{
     display: flex;
@@ -48,9 +48,10 @@ a{
 .section1{
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 24px;
     flex:1;
     justify-content: space-around;
+    margin: 60px 0;
 }
 .section1  h3{
     font-size: 48px;
@@ -73,14 +74,18 @@ a{
 }
 .left-side{
     max-width: 400px;
+    padding-bottom: 12px;
 }
 img{
-    width: 400px;
+    width: 300px;
     height: 200px;
     border-radius: 6px;
 }
 
 /* Section 2 */
+.section2{
+    background-color: white;
+}
 .section2 > h3, .wrapper > p{
     text-align: center;
 }
@@ -95,7 +100,7 @@ img{
     flex-wrap: wrap;
 }
 .container1 .box{
-    border: 2px solid black;
+    border: 2px solid #3882F6;
     width: 140px;
     height: 140px;
     flex-shrink: 0;
@@ -106,4 +111,59 @@ img{
     flex-wrap: wrap;
     justify-content: center;
     flex-basis: 120px;
+}
+
+/* Section 3 */
+.section3{
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper3{
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+}
+.tag{
+    align-self: flex-end;
+    flex-shrink: 0;
+}
+
+/* Section 4 */
+.section4{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+.wrapper4{
+    margin: 40px;
+}
+.rectangle{
+    background-color: #3882F6;
+    padding: 20px 130px;
+    display: flex;
+    align-items: flex-end;
+    min-width: 600px;
+    border-radius: 8px;
+    gap: 12px;
+}
+.rectangle .left-side{
+    color: #F9FAF8;
+    padding: 0;
+}
+.rectangle p{
+    margin: 0;
+
+}
+.right-side{
+    flex-shrink: 0;
+    align-self: center;
+}
+.right-side > button{
+    background-color: #3882F6;
+    border: 1px solid #F9FAF8;
+    color: #F9FAF8;
 }
